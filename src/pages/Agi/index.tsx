@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react'
 import Grid from '../../assets/images/Group 15 (1).png'
 import AgiImage from '../../assets/images/agi.png'
-import VideoAgi from '../../assets/videos/agicontrolvideo.mp4'
 import Mockup from '../../assets/images/celularmockup.png'
 import Bannerazul from '../../assets/images/agiazulbanner.png'
 import Bannerbranco from '../../assets/images/agibrancobanner.png'
@@ -90,7 +89,7 @@ export default function Agi({ id }: { id?: string }) {
   {/* Vídeo */}
   <video
     ref={videoRef}
-    src={VideoAgi}
+    src="https://res.cloudinary.com/dqx1a8oth/video/upload/agicontrolvideo_wvccij.mp4"
     loop
     muted
     onTimeUpdate={handleTimeUpdate}

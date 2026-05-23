@@ -9,7 +9,6 @@ import Estrelas from '../../assets/images/estrelas.png'
 import Figma from '../../assets/images/figmalogo.png'
 import Paleta from '../../assets/images/paletabetter.png'
 import CelularBetterFundo from '../../assets/images/celularbettefundo.png'
-import VideoBetter from '../../assets/videos/betterprototipagem.mp4'
 
 export default function Better({ id }: { id?: string }) {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -109,7 +108,7 @@ export default function Better({ id }: { id?: string }) {
         {/* Vídeo */}
         <video
           ref={videoRef}
-          src={VideoBetter}
+          src="https://res.cloudinary.com/dqx1a8oth/video/upload/betterprototipagem_vx6jqm.mp4"
           loop
           muted
           onTimeUpdate={handleTimeUpdate}
